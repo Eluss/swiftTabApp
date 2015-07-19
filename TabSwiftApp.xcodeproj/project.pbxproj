@@ -14,6 +14,7 @@
 		1D411C3E1B5BC9EC00164645 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D411C3D1B5BC9EC00164645 /* Images.xcassets */; };
 		1D411C411B5BC9EC00164645 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D411C3F1B5BC9EC00164645 /* LaunchScreen.xib */; };
 		1D411C4D1B5BC9EC00164645 /* TabSwiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D411C4C1B5BC9EC00164645 /* TabSwiftAppTests.swift */; };
+		1D411C851B5BCFD700164645 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D411C841B5BCFD700164645 /* ItemsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1D411C461B5BC9EC00164645 /* TabSwiftAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabSwiftAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D411C4B1B5BC9EC00164645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D411C4C1B5BC9EC00164645 /* TabSwiftAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSwiftAppTests.swift; sourceTree = "<group>"; };
+		1D411C841B5BCFD700164645 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				1D411C361B5BC9EC00164645 /* FirstViewController.swift */,
 				1D411C381B5BC9EC00164645 /* SecondViewController.swift */,
 				1D411C3A1B5BC9EC00164645 /* Main.storyboard */,
+				1D411C841B5BCFD700164645 /* ItemsManager.swift */,
 				1D411C3D1B5BC9EC00164645 /* Images.xcassets */,
 				1D411C3F1B5BC9EC00164645 /* LaunchScreen.xib */,
 				1D411C321B5BC9EC00164645 /* Supporting Files */,
@@ -217,6 +220,7 @@
 			files = (
 				1D411C391B5BC9EC00164645 /* SecondViewController.swift in Sources */,
 				1D411C351B5BC9EC00164645 /* AppDelegate.swift in Sources */,
+				1D411C851B5BCFD700164645 /* ItemsManager.swift in Sources */,
 				1D411C371B5BC9EC00164645 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
