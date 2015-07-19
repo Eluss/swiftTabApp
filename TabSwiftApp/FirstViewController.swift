@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var itemsTableView: UITableView!
     
@@ -22,6 +22,15 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+    }
 
 }
 
