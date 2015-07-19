@@ -39,7 +39,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 
         cell.textLabel!.text = itemsMgr.items[indexPath.row].name
         cell.detailTextLabel!.text = itemsMgr.items[indexPath.row].details
-
+    
         return cell
     }
 

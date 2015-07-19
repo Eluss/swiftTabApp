@@ -27,11 +27,24 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func addItemAction(sender: UIButton) {
-        itemsMgr.addItem(nameTextField.text!, details: detailsTextField.text!)
-        nameTextField.resignFirstResponder()
-        detailsTextField.resignFirstResponder()
+        if (nameTextField.text.isEmpty) {
+            displayAlert()
+        } else {
+            itemsMgr.addItem(nameTextField.text!, details: detailsTextField.text!)
+            nameTextField.resignFirstResponder()
+            detailsTextField.resignFirstResponder()
+            self.tabBarController?.selectedIndex = 0
+        }
     }
-    
+
+    func displayAlert() {
+        let alert = UIAlertController(title: "empty name!", message: "name field is empty", preferredStyle:UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "close", style:UIAlertActionStyle.Default, handler:nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
