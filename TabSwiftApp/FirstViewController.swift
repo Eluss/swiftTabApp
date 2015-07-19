@@ -12,6 +12,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     @IBOutlet weak var itemsTableView: UITableView!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        itemsTableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,12 +29,18 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        return itemsMgr.items.count
+    
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
+        let cell: UITableViewCell = UITableViewCell(style:UITableViewCellStyle.Subtitle , reuseIdentifier: "CellId")
+        
+        cell.textLabel!.text = itemsMgr.items[indexPath.row].name
+        cell.detailTextLabel!.text = itemsMgr.items[indexPath.row].details
+        
+        return cell
     }
 
 }
